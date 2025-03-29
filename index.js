@@ -22,6 +22,7 @@ const telegramBot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 telegramBot.on('message', (msg) => {
   const chatId = msg.chat.id;
   telegramBot.sendMessage(chatId, 'Received your message');
+});
 
 app.get('/send-sms', (req, res) => {
   res.send('SMS Sending Feature'); // Placeholder for SMS sending logic/page
@@ -33,8 +34,6 @@ app.get('/chat', (req, res) => {
 
 app.get('/receive-otp', (req, res) => {
   res.sendFile(process.cwd() + '/receive_otp.php'); // Serve receive_otp logic
-});
-
 });
 
 const app = express(); // Creates an app for your servers client
