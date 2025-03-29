@@ -10,14 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^18.0.6",
-    "body-parser": "^1.20.0",
-    "discord.js": "^14.18.0",
-    "express": "^4.18.1",
-    "node-fetch": "^3.2.6",
-    "node-telegram-bot-api": "^0.66.0",
-    "plivo": "^4.69.6",
-    "quick.db": "^9.1.7",
-    "twilio": "^3.84.1"
+    "@types/node": "latest",
+    "body-parser": "latest",
+    "discord.js": "latest",
+    "express": "latest",
+    "node-fetch": "latest",
+    "node-telegram-bot-api": "latest",
+    "plivo": "latest",
+    "quick.db": "latest",
+    "twilio": "latest"
   }
 }

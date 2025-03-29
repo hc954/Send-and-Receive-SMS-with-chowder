@@ -153,7 +153,7 @@
   "resolved" "https://registry.npmjs.org/@sideway/pinpoint/-/pinpoint-2.0.0.tgz"
   "version" "2.0.0"
 
-"@types/node@*", "@types/node@^18.0.6":
+"@types/node@*", "@types/node@latest":
   "integrity" "sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.0.6.tgz"
   "version" "18.0.6"
@@ -323,7 +323,7 @@
   "resolved" "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz"
   "version" "3.7.2"
 
-"body-parser@^1.20.0", "body-parser@1.20.0":
+"body-parser@1.20.0", "body-parser@latest":
   "integrity" "sha512-DfJ+q6EPcGKZD1QWUjSpqp+Q7bDQTsQIF4zfUAtZ6qk+H/3/QRhg9CEp39ss+/T2vw0+HaidC0ecJj/DRLIaKg=="
   "resolved" "https://registry.npmjs.org/body-parser/-/body-parser-1.20.0.tgz"
   "version" "1.20.0"
@@ -529,7 +529,7 @@
   "resolved" "https://registry.npmjs.org/discord-api-types/-/discord-api-types-0.37.119.tgz"
   "version" "0.37.119"
 
-"discord.js@^14.18.0":
+"discord.js@latest":
   "integrity" "sha512-SvU5kVUvwunQhN2/+0t55QW/1EHfB1lp0TtLZUSXVHDmyHTrdOj5LRKdR0zLcybaA15F+NtdWuWmGOX9lE+CAw=="
   "resolved" "https://registry.npmjs.org/discord.js/-/discord.js-14.18.0.tgz"
   "version" "14.18.0"
@@ -703,7 +703,7 @@
   "resolved" "https://registry.npmjs.org/eventemitter3/-/eventemitter3-3.1.2.tgz"
   "version" "3.1.2"
 
-"express@^4.18.1":
+"express@latest":
   "integrity" "sha512-zZBcOX9TfehHQhtupq57OF8lFZ3UZi08Y97dwFCkD8p9d/d2Y3M+ykKcwaMDEL+4qyUolgBDX6AblpR3fL212Q=="
   "resolved" "https://registry.npmjs.org/express/-/express-4.18.1.tgz"
   "version" "4.18.1"
@@ -1413,7 +1413,7 @@
   "resolved" "https://registry.npmjs.org/node-domexception/-/node-domexception-1.0.0.tgz"
   "version" "1.0.0"
 
-"node-fetch@^3.2.6":
+"node-fetch@latest":
   "integrity" "sha512-LAy/HZnLADOVkVPubaxHDft29booGglPFDr2Hw0J1AercRh01UiVFm++KMDnJeH9sHgNB4hsXPii7Sgym/sTbw=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-3.2.6.tgz"
   "version" "3.2.6"
@@ -1422,7 +1422,7 @@
     "fetch-blob" "^3.1.4"
     "formdata-polyfill" "^4.0.10"
 
-"node-telegram-bot-api@^0.66.0":
+"node-telegram-bot-api@latest":
   "integrity" "sha512-s4Hrg5q+VPl4/tJVG++pImxF6eb8tNJNj4KnDqAOKL6zGU34lo9RXmyAN158njwGN+v8hdNf8s9fWIYW9hPb5A=="
   "resolved" "https://registry.npmjs.org/node-telegram-bot-api/-/node-telegram-bot-api-0.66.0.tgz"
   "version" "0.66.0"
@@ -1502,7 +1502,7 @@
   "resolved" "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"
   "version" "2.1.0"
 
-"plivo@^4.69.6":
+"plivo@latest":
   "integrity" "sha512-rNUCYMU0h6g4+5v8gBhArPc1uuJ0HqMjOKWzvbYA1il9cC/nRht1XTaq9rtZzout9EgFX3ADL79+fIl/G0k5ew=="
   "resolved" "https://registry.npmjs.org/plivo/-/plivo-4.69.6.tgz"
   "version" "4.69.6"
@@ -1608,7 +1608,7 @@
   "resolved" "https://registry.npmjs.org/querystringify/-/querystringify-2.2.0.tgz"
   "version" "2.2.0"
 
-"quick.db@^9.1.7":
+"quick.db@latest":
   "integrity" "sha512-ZLPVLVFZtvFRLHqIK99iyrLDUznOTpnp5tB+QpGErT+reDSvgBELuVsMkGSSiqKT9R2YSOhO+096Wb0xTaOHMA=="
   "resolved" "https://registry.npmjs.org/quick.db/-/quick.db-9.1.7.tgz"
   "version" "9.1.7"
@@ -2013,7 +2013,7 @@
   "resolved" "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz"
   "version" "0.14.5"
 
-"twilio@^3.84.1":
+"twilio@latest":
   "integrity" "sha512-Q/xaPoayTj+bgJdnUgpE+EiB/VoNOG+byDFdlDej0FgxiHLgXKliZfVv6boqHPWvC1k7Dt0AK96OBFZ0P55QQg=="
   "resolved" "https://registry.npmjs.org/twilio/-/twilio-3.84.1.tgz"
   "version" "3.84.1"
