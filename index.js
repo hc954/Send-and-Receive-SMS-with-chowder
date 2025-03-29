@@ -42,6 +42,10 @@ const app = express(); // Creates an app for your servers client
 app.use(bodyParser.json()); // Express modules / packages
 app.use(bodyParser.urlencoded({ extended: true })); // Express modules / packages
 
+// Set EJS as the templating engine
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
 app.use(express.static('public')); // load the files that are in the public directory
 
 const dashboardRoutes = require('./dashboard');
