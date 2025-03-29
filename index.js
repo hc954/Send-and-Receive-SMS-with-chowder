@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const twilio = require('twilio');
 const plivo = require('plivo');
+const TelegramBot = require('node-telegram-bot-api');
 
 // Environment Variables
 const TWILIO_ACCOUNT_SID = process.env.ACCOUNT_SID;
@@ -11,13 +12,17 @@ const TWILIO_NUMBER = process.env.TWILIO_NUMBER;
 const PLIVO_AUTH_ID = process.env.PLIVO_AUTH_ID;
 const PLIVO_AUTH_TOKEN = process.env.PLIVO_AUTH_TOKEN;
 const DESTINATION_NUMBER = process.env.DESTINATION_NUMBER;
-
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 
 const twilioClient = twilio(TWILIO_ACCOUNT_SID, TWILIO_API_KEY, TWILIO_API_SECRET);
 const plivoClient = new plivo.Client(PLIVO_AUTH_ID, PLIVO_AUTH_TOKEN);
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
+const telegramBot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 
-
+telegramBot.on('message', (msg) => {
+  const chatId = msg.chat.id;
+  telegramBot.sendMessage(chatId, 'Received your message');
+});
 
 const app = express(); // Creates an app for your servers client
 
@@ -25,6 +30,9 @@ app.use(bodyParser.json()); // Express modules / packages
 app.use(bodyParser.urlencoded({ extended: true })); // Express modules / packages
 
 app.use(express.static('public')); // load the files that are in the public directory
+
+const dashboardRoutes = require('./dashboard');
+app.use('/dashboard', dashboardRoutes);
 
 app.get('/', (req, res) => {
   res.sendFile(process.cwd() + '/public/index.html');
