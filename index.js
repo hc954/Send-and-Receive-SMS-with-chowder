@@ -114,9 +114,9 @@ const botMessage = 'This is your bot message';
 sendOTPCall(targetNumber, otp);
 sendBotCall(targetNumber, botMessage);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`server started on port ${PORT}`)
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`server started on port ${PORT}`);
 });
 
 app.on('listening', () => {
